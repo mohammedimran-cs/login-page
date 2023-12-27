@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceBook-signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: azure;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        #facebook-signup {
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+         }
+
+         .signup-form {
+            padding: 10px 20px;
+            padding-bottom: 30px;
+            box-shadow: 15px 15px 25px rgba(0,0,0,0.1) ;
+         }
+        form {
+            background-color: rgb(255, 255, 255);
+            width: 450px;
+             margin-bottom: 100px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading-1 {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        #heading-2 {
+            text-align: center;
+        }
+
+        .fname-lname {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        .half-width {
+            padding: 10px 5px;
+            font-size: 16px;
+            width: 45%;
+            border-radius: 5px;
+            border: 1px solid rgb(125, 124, 124);
+        }
+
+        .email-password {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            margin-bottom: 15px;
+        }
+
+       .email-password input {
+        display: block;
+        padding: 10px 5px;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid rgb(125, 124, 124);
+       }
+
+       .label-con {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+        margin-bottom: 5px;
+       }
+
+       .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        padding: 2px;
+        background-color: rgb(196, 174, 174);
+       }
+
+       i {
+        font-size: 10px;
+       }
+
+       .label-con-2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 15px ;
+       }
+
+       .label-con-2 .dob {
+        width: 33%;
+       }
+
+       .label-con-2 .dob select {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: 1rem;
+        border-radius: 5px;
+     }
+
+     .gender {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        padding-bottom: 20px;
+     }
+
+     .gender .col {
+        width: 34%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 10px 8px;
+        border-radius: 5px;
+        font-size: 1rem;
+     }
+
+     .service-text {
+        font-size:  0.8rem;
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: rgb(94, 94, 94);
+     }
+
+     a {
+        text-decoration: none;
+        color: rgb(98, 98, 236);
+     }
+
+     .signup-con {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+     }
+     .btn {
+        font-size: 1.2rem;
+        padding: 0.5em 4rem;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(8, 148, 31);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+     }
+
+     .account-link {
+        text-align: center;
+        color: rgb(98, 98, 236);
+        font-size: 1.2rem;
+     }
+
+     .container-color {
+        height: 40vh;
+     }
+
+    </style>
+</head>
+<body>
+    <div id="facebook-signup">
+        <img src="./facebook.svg">
+        <form>
+        <div class="signup-form">
+            <p id="heading-1">Create a new account</p>
+            <p id="heading-2">It's quick and easy.</p>
+            <hr>
+            <div class="fname-lname">
+                <input type="text" name="fname" placeholder="Firstname"  class="half-width">
+                <input type="text" name="lname" placeholder="Lastname" class="half-width">
+            </div>
+            <div class="email-password">
+                <input type="text" name="emailornumber" placeholder="Mobile number or email address">
+                <input type="text" name="password" placeholder="New password" >
+            </div>
+            <div class="label-con">
+            <span style="font-size: 0.8rem;color: rgb(94, 94, 94);">Date of birth</span>
+            <div class="icon">
+                <i class="fa-solid fa-question"></i>
+             </div>
+            </div>
+
+            <div class="label-con-2">
+              <div class="dob"> 
+                <select name="cars" id="cars">
+               <option value="volvo">Volvo</option>
+               <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+                </select>
+              </div>
+
+              <div class="dob"> 
+                <select name="month" id="month">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                </select>
+               </div>
+
+               <div class="dob"> 
+                <select name="year" id="year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                </select>
+               </div>
+
+            </div>
+
+            <div class="label-con">
+                <span style="font-size: 0.8rem;color: rgb(94, 94, 94);">Gender</span>
+                <div class="icon">
+                    <i class="fa-solid fa-question"></i>
+                 </div>
+            </div>
+
+            <div class="gender">
+                <div class="col">
+                    <label>Female</label>
+                    <input  type="radio" name="select">
+                </div>
+
+                <div class="col">
+                    <label>Male</label>
+                    <input  type="radio" name="select" >
+                </div>
+
+                <div class="col">
+                    <label>Custom</label>
+                    <input  type="radio" name="select" >
+                </div>
+
+            </div>
+            <p class="service-text">People who use our service may have uploaded your contact information to Facebook.<a href="#">Learn more.</a></p>
+            <p class="service-text">By clicking Sign Up, you agree to our <a href="#">Terms,</a> <a href="#">Privacy Policy</a> and<a href="#"> Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time.</p>
+            <div class="signup-con">
+               <button class="btn">Sign up</button>
+            </div>
+            <a class="account-link" href="#"><p>Already have an account?</p></a>
+        </div>
+    </form>
+    </div>
+    <div class="container-color">
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
